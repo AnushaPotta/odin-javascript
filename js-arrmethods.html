@@ -8,11 +8,20 @@
   <body>
     <script>
       function sumOfTripledEvens(array) {
-        return 3 * array;
+        if (array % 2 === 0) {
+          return array;
+        }
       }
       arr = [1, 2, 3, 4, 5];
-      const triple_array = arr.map(sumOfTripledEvens);
+      const even_array = arr.filter(sumOfTripledEvens);
+      console.log(even_array);
+      const triple_array = even_array.map((array) => 3 * array);
       console.log(triple_array);
+
+      const sum = triple_array.reduce((accumulator, array) => {
+        return accumulator + array;
+      });
+      console.log(sum);
     </script>
   </body>
 </html>
