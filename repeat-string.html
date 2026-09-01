@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function repeatString(str, num) {
+        let temp = str;
+
+        for (let i = 1; i < num; i++) {
+          if (num < 0) {
+            return "Error";
+          }
+          temp = `${temp + str}`;
+        }
+        return temp;
+      }
+      let result = repeatString("hey", 5);
+      alert(result);
+    </script>
+  </body>
+</html>
