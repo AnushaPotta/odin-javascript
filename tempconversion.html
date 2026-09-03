@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function convertToCelsius(tempF) {
+        let c = (tempF - 32) * (5 / 9);
+        c = Math.round((c * 10) / 10);
+        return c;
+      }
+      alert(convertToCelsius(32));
+      alert(convertToCelsius(64));
+
+      function convertToFahrenheit(tempC) {
+        let f = 32 + tempC * (9 / 5);
+        f = Math.round(f * 10) / 10;
+        return f;
+      }
+      alert(convertToFahrenheit(0));
+      alert(convertToFahrenheit(1));
+    </script>
+  </body>
+</html>
